@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 import os
 app = Flask(__name__)
 app.secret_key = 'thisismysecretkey'
+load_dotenv()
 firebase_config = {
     "type": os.getenv("FIREBASE_TYPE"),
     "project_id": os.getenv("FIREBASE_PROJECT_ID"),
